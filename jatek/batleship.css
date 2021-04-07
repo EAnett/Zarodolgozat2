@@ -1,0 +1,300 @@
+body {
+    background-image: url("../pictures/hatterelsooldal.jpg");
+    height: 500px;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    position: relative;
+    font-family: Impact, Charcoal, sans-serif;
+    margin: 0;
+}
+body h1 {
+    font-family: 'Bangers', cursive;
+    font-size: 50px;
+    justify-content: center;
+    text-align: center;
+    color: #00ccff;
+    text-shadow: 5px 5px 10px darkblue;
+}
+h3 {
+    font-family: 'Bangers', cursive;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+}
+
+.btn {
+    font-family: 'Bangers', cursive;
+    height: 90px;
+    width: 90px;
+    border-radius: 100px;
+    border: none;
+    background-color: #00ccff;
+    box-shadow:0px 0px 7px 2px darkblue;
+    margin-left:130px;
+    margin-right:130px;
+}
+
+.visszajelzes {
+    margin: 5px;
+}
+.info2 {
+    margin: 5px;
+}
+.visszajelzes3 {
+    margin: 5px;
+}
+
+.info-sav {
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.5rem;
+}
+
+.hajoknak-tabla{
+    margin: 2vmin;
+    display: grid;
+    /*background-image: url("../pictures/torpedohatter.png");*/
+    background-color: aquamarine !important;
+    background-size: 100%;
+    grid-template-rows: repeat(10, 4.6vmin);
+    grid-template-columns: repeat(10, 4.6vmin);
+}
+.hajoknak-tabla div{
+    border: 1px solid hsla(0, 100%, 0%, .2);
+}
+
+.tabla-ellenfel > .taken {
+    /*background-image: url("../pictures/torpedohatter.png") ;
+    overflow: hidden;*/
+    border-radius: 0 !important;
+    background-color: aquamarine !important;
+    
+}
+
+.taken.vertical::before, .taken.horizontal::before {
+    content: '';
+    position: absolute;
+    border: .3vmin solid white;
+    top: -1px;
+    bottom: -1px;
+    left: -1px;
+    right: -1px;
+}
+.taken.horizontal::before {
+    animation: ripplesY 3s linear infinite;
+    border-left: none;
+    border-right: none;
+}
+
+.taken.vertical::before {
+    animation: ripplesX 3s linear infinite;
+    border-top: none;
+    border-bottom: none;
+}
+
+@keyframes ripplesX {
+    0% {
+        opacity: 1;
+        transform: scaleX(1);
+    }
+    100% {
+        opacity: 0;
+        transform: scaleX(1.5);
+    }
+}
+@keyframes ripplesY {
+    0% {
+        opacity: 1;
+        transform: scaleY(1);
+    }
+    100% {
+        opacity: 0;
+        transform: scaleY(1.5);
+    }
+}
+
+.taken, .hajo {
+    position: relative;
+    background-color: black;
+    
+}
+
+.taken.start.vertical, .taken.start.vertical::before {
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+}
+.taken.end.vertical, .taken.end.vertical::before {
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+.taken.start.horizontal, .taken.start.horizontal::before {
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+.taken.end.horizontal, .taken.end.horizontal::before {
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+.tabla-hajok {
+   display: flex;
+}
+
+.hajo > div {
+    width: 4.6vmin;
+    height: 4.6vmin;
+}
+
+.hajo {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1vmin;
+    width: calc(4.6vmin * var(--width, 1));
+    height: calc(4.6vmin * var(--height, 1));
+    border-radius: 2.6vmin;
+}
+.Rombolo-container {
+    width: 80px;
+    height: 40px;
+    margin: 10px;
+    display: flex;
+}
+
+.Rombolo-container-vertical {
+    width: 40px;
+    height: 80px;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Tengeralattjaro-container {
+    width: 120px;
+    height: 40px;
+
+    margin: 10px;
+    display: flex;
+}
+
+.Tengeralattjaro-container-vertical {
+    width: 40px;
+    height: 120px;
+
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Cirkalo-container {
+    width: 120px;
+    height: 40px;
+
+    margin: 10px;
+    display: flex;
+}
+
+.Cirkalo-container-vertical {
+    width: 40px;
+    height: 120px;
+
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Csatahajo-container {
+    width: 160px;
+    height: 40px;
+
+    margin: 10px;
+    display: flex;
+}
+
+.Csatahajo-container-vertical {
+    width: 40px;
+    height: 160px;
+
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Szallitohajo-container {
+    width: 200px;
+    height: 40px;
+
+    margin: 10px;
+    display: flex;
+}
+
+.Szallitohajo-container-vertical {
+    width: 40px;
+    height: 200px;
+
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hajo div {
+    width: 40px;
+    height: 40px;
+}
+
+
+.boom::after, .miss::after {
+    content: '';
+    position: absolute;
+    border-radius: 100%;
+    width: 2vmin;
+    height: 2vmin;
+}
+.miss::after {
+    background-color: grey;
+}
+.boom::after {
+    background-color: red;
+}
+.miss, .boom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.miss::before {
+    content: '';
+    position: absolute;
+    animation: hit .2s ease-out;
+    border: 1vmin solid white;
+    border-radius: 100%;
+    width: 2vmin;
+    height: 2vmin;
+}
+.boom::before {
+    content: '';
+    animation: boom .2s ease-out;
+}
+
+@keyframes hit {
+    0% {
+        opacity: 1;
+        transform: scale(0);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(4)
+    }
+}
+@keyframes boom {
+    0% {
+        background-color: red;
+    }
+    100% {
+        background-color: black;
+    }
+}

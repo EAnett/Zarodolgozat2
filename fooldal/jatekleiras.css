@@ -1,0 +1,48 @@
+
+.responsive {
+    width: 100%;
+    height: auto;
+}
+.con1, .con2, .con3, .con4, .con5, .con6, .con7, .con8, .con9 {
+
+    max-width: 500px;
+    padding: 15px;
+    margin: auto;
+    margin-bottom: 80px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+    text-align: center;
+    
+}
+.con2 {
+    right: 50px;
+    top: 600px;
+
+}
+.con4 {
+    right: 50px;
+    top: 1200px;
+
+}
+.con6 {
+    right: 50px;
+    top: 1800px;
+
+}
+.con8 {
+    right: 50px;
+    top: 2400px;
+
+}
+
+p {
+    text-align: center;
+    font-size: 1.5vmax;
+}
+
+.k1, .k2, .k3, .k4, .k5, .k6, .k7, .k8, .k9 {
+    text-align: center;
+}
+
+h1 {
+    font-size: 10vmin;
+}

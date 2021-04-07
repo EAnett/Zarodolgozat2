@@ -1,0 +1,18 @@
+.header {
+  padding: 0px 0px;
+}
+
+.content {
+  padding: 5px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
